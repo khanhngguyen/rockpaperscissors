@@ -34,6 +34,20 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-const playerSelection = 'paper';
-const computerSelection = computerChoice();
-console.log(playRound(playerSelection, computerSelection));
+// const playerSelection = 'paper';
+// const computerSelection = computerChoice();
+// console.log(playRound(playerSelection, computerSelection));
+
+function game () {
+    let round = "";
+    for (let i = 1; i < 6; i++) {
+        let player = prompt("Choose Rock, Papper or Scissors");
+        //make playerSelection case-insensitive (e.g. ROCK, rOCk, paper are all okay)
+        playerSelection = player.toLowerCase();
+        let computerSelection = computerChoice();
+        console.log(`Round: ${i}`);
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+
+console.log(game());
