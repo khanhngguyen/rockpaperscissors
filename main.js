@@ -103,8 +103,8 @@ function endGame (playerScore, computerScore) {
         document.querySelector(".final-result").textContent = "Oh no! You've lost"
         document.querySelector(".final-result").style.color = "red"
     }
-    document.querySelector(".player").style.display = "none"
-    document.querySelector(".computer").style.display = "none"
+    document.querySelector(".player").textContent = ""
+    document.querySelector(".computer").textContent = ""
     const reset = document.querySelector(".reset")
     reset.style.display = "contents";
     reset.style.cursor = "pointer";
