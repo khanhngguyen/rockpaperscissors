@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Chakra+Petch:light|Roboto+Mono");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto Mono', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #DFCFBE;
+    height: 100vh;
+    border: 3px solid white;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-title { 
+    margin: 2rem auto 4rem;
+
+}
+.game-title img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.game-title h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    word-spacing: 0.5rem;
+}
+
+.game-choose {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1rem;
+}
+
+.game-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 1rem auto;
+}
+
+.game-box img {
+    width: 13rem;
+    height: 13rem;
+    cursor: pointer;
+    margin: 0 2rem;
+}
+
+.game-box img:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 820px) {
+    .game-box img {
+        width: 11rem;
+        height: 11rem;
+        cursor: pointer;
+        margin: 0 1rem;
+    }
+}
+
+.game-board {
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.final-result {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+}
+
+.game-board img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.reset {
+    display: none;
+}
