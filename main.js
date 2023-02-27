@@ -78,15 +78,21 @@ function playRound (playerSelection, computerSelection) {
 function game (playerChoice) {
     let playerSelection = playerChoice;
     let computerSelection = computerChoice();
+    if (round > 4) {
+        return endGame(playerScore, computerScore);
+    }
     round++;
     playRound(playerSelection, computerSelection);
     document.querySelector('.game-round').textContent = `Round: ${round}`;
     document.querySelector('.player-score').textContent = `Your score: ${playerScore}`;
     document.querySelector('.computer-score').textContent = `Computer's score: ${computerScore}`;
     //console.log(`You score: ${playerScore}. Computer score: ${computerScore}`)
+
+    /* move condition to above function call
+    to make images unclickable after 5 rounds of game
     if (round > 4) {
         endGame(playerScore, computerScore)
-    }
+    } */
 } 
 
 rock.addEventListener('click', () => game('rock'));
@@ -94,8 +100,10 @@ paper.addEventListener('click', () => game('paper'));
 scissors.addEventListener('click', () => game('scissors'));
 
 function endGame (playerScore, computerScore) {
+    rock.removeEventListener('click', () => game('rock'));
     if (playerScore == computerScore) {
         document.querySelector(".final-result").textContent = "It's a tie"
+        document.querySelector(".final-result").style.color = "black"
     } else if (playerScore > computerScore) {
         document.querySelector(".final-result").textContent = "Congratulations! You've won"
         document.querySelector(".final-result").style.color = "green"
