@@ -9,9 +9,9 @@ Creating a simple game of rock, paper, scissors using Javascript as an assigment
 *Credit: Icons created by Josie Schultz from Noun Project*
 
 ## Outcome
-![finishedPage](finish.png)
+![finishedPage](./images/finish.png)
 
-## Develop phases
+## Development phases
 #### Phase 1: create the basics
 - create basic functions for the game: computer's random choices of rock/paper/scissors, logic of a single game round
 - create function for the game:
@@ -33,10 +33,16 @@ Creating a simple game of rock, paper, scissors using Javascript as an assigment
 - use @media query to make responsive design
 
 Examples of finished page on different devices (demo on Developer Tools):
-![responsive](onIphone12pro.png)
-![responsive](onIphoneSE.png)
-![responsive](onGalaxyFold.png)
-![responsive](onIpadMini.png)
+![responsive](./images/onIphone12pro.png)
+![responsive](./images/onGalaxyFold.png)
+![responsive](./images/onIphoneSE.png)
+![responsive](./images/onIpadMini.png)
+
+## Learning outcomes
+- get used to basics of Javascript:
+    - functions, loop, execution order
+    - DOM manipulation
+- fix issues to improve page's interaction
 
 ## Known limitations
 - Design is not optimized on mobile screen landscape mode :slightly_frowning_face:
