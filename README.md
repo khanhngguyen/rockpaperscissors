@@ -9,6 +9,8 @@ Creating a simple game of rock, paper, scissors using Javascript as an assigment
 *Credit: Icons created by Josie Schultz from Noun Project*
 
 ## Outcome
+[demo page here](https://khanhngguyen.github.io/rockpaperscissors/)
+
 ![finishedPage](./images/finish.png)
 
 ## Development phases
